@@ -3,7 +3,7 @@ SET @CGUID := 145656;  --  56 free guids
 
 -- ALTERAC VALLEY
 DELETE FROM `gameobject` WHERE `map`=30;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
+REPLACE INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
 (@OGUID+  0, 3832, 30, 0, 0, 15, 1, -1235.571, -241.4781, 73.43774, 1.483528, 0, 0, 0.6755896, 0.7372779, 7200, 255, 1, 11159),
 (@OGUID+  1, 3833, 30, 0, 0, 15, 1, -1248.852, -254.0604, 73.43774, 1.483528, 0, 0, 0.6755896, 0.7372779, 7200, 255, 1, 11159),
 (@OGUID+  2, 3834, 30, 0, 0, 15, 1, -1248.149, -245.5994, 73.43774, -0.05235888, 0, 0, -0.02617645, 0.9996573, 7200, 255, 1, 11159),
